@@ -20,12 +20,32 @@ export default function WaterProgress({consumed, meta}) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    width: '80%', 
-    marginVertical: 20,
+  card: {
+    backgroundColor: COLORS.cardBg,
+    borderRadius: 16,
+    padding: 20,
+    width: '100%',
     alignItems: 'center',
+    marginBottom: 24,
+    elevation: 3,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
   },
-  
+
+  consumedText: {
+    fontSize: 36,
+    fontWeight: 'bold',
+    color: COLORS.primary,
+  },
+
+  percentageText: {
+    fontSize: 36,
+    fontWeight: 'bold',
+    color: COLORS.primary,
+  },
+
   progressBarBackground: {
     width: '100%',
     height: 14,
