@@ -1,7 +1,7 @@
 import { View, Text, Pressable } from 'react-native';
 
 
-export function ActionButtons(){
+export default function ActionButtons(){
     return(
       <View>
         <Text>Adicionar consumo:</Text>
