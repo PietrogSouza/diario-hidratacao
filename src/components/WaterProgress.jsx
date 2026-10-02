@@ -11,6 +11,7 @@ export default function WaterProgress({consumed, meta}) {
         <View style={styles.container}>
             <Text>Você bebeu {consumed}ml de água hoje.</Text>
             <Text>Você atingiu {porcentagem}% da meta diária</Text>
+            
             <View style={styles.progressBarBackground}>
                 <View style={[styles.progressBarFill, { width: `${porcentagem}%`}]}></View>
             </View>

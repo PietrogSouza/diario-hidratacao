@@ -16,11 +16,13 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView>
-        <StatusBar barStyle={'dark-content'} />
-        <View style={styles.container}>
+        <StatusBar barStyle={'auto'} />
+        <View>
+
           <Header META={META} />
-          <WaterProgress consumed={consumed} meta={META} />
+          <WaterProgress consumed={200} meta={META} />
           <ActionButtons setConsumed={setConsumed} />
+
         </View>
       </SafeAreaView>
     </SafeAreaProvider>
@@ -28,11 +30,4 @@ export default function App() {
 
 }
 
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#ffffff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
 
-});
